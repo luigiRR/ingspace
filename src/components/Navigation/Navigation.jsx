@@ -1,27 +1,26 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import { Link } from "react-router-dom";
-/*import Logo from '../../assets/Navbar/sol.png';*/
+import ingspace from "../../assets/Navbar/ingspace.png"
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="bg-gray-100 fixed inset-x-0 z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16">
+        <div className="h-20">
           <div className="flex">
             <div className="flex-shrink-0 mt-5">
-              <p>INGSPACE</p>
-             {/* <Link to="/">
-              <img
-                  className="h-20 w-30"
-                  src={Logo}
-                  alt="logo-ecocalor"
-              />
-  </Link> */}
+              <Link to="/">
+                <img
+                    className="h-10 w-15"
+                    src={ingspace}
+                    alt="logo-ingspace"
+                />
+              </Link>
             </div>
             <div className="hidden md:block">
-              <div className="ml-10 mt-5">
+              <div className="ml-10 mt-5 flex items font-doka">
                 <Link
                   to="/"
                   className="text-black px-3 py-2 rounded-md font-medium"
